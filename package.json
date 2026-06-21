@@ -1,5 +1,5 @@
 {
-  "name": "prompt-shield",
+  "name": "zambo-prompt-shield",
   "version": "1.0.0",
   "description": "Prompt injection & jailbreak detection for AI applications. 18 attack patterns, optional LLM semantic analysis, zero required dependencies.",
   "main": "./dist/index.js",
