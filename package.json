@@ -1,0 +1,31 @@
+{
+  "name": "prompt-shield",
+  "version": "1.0.0",
+  "description": "Prompt injection & jailbreak detection for AI applications. 18 attack patterns, optional LLM semantic analysis, zero required dependencies.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "prompt-injection",
+    "jailbreak",
+    "ai-security",
+    "llm-security",
+    "prompt-shield",
+    "ai-safety",
+    "content-moderation"
+  ],
+  "author": "Brennan Zambo <brennanzambo@zambo.dev> (https://zambo.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zambodotdev/prompt-shield"
+  },
+  "homepage": "https://zambo.dev",
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
