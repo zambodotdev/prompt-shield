@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/zambo-prompt-shield.svg)](https://www.npmjs.com/package/zambo-prompt-shield) [![npm downloads](https://img.shields.io/npm/dm/zambo-prompt-shield.svg)](https://www.npmjs.com/package/zambo-prompt-shield) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 # zambo-prompt-shield
 
 Prompt injection & jailbreak detection for AI applications.
