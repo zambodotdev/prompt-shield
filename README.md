@@ -1,4 +1,4 @@
-# prompt-shield
+# zambo-prompt-shield
 
 Prompt injection & jailbreak detection for AI applications.
 
@@ -21,9 +21,9 @@ Returns a clean `recommendation`: `"safe"`, `"review"`, or `"block"`.
 ## Install
 
 ```bash
-npm install prompt-shield
+npm install zambo-prompt-shield
 # or
-pnpm add prompt-shield
+pnpm add zambo-prompt-shield
 ```
 
 ---
@@ -33,7 +33,7 @@ pnpm add prompt-shield
 ### Async (with optional deep mode)
 
 ```ts
-import { scanPrompt } from "prompt-shield";
+import { scanPrompt } from "zambo-prompt-shield";
 
 const result = await scanPrompt({
   prompt: userInput,
@@ -55,7 +55,7 @@ if (result.recommendation === "review") {
 ### Sync (zero deps, pattern-only)
 
 ```ts
-import { scanPromptSync } from "prompt-shield";
+import { scanPromptSync } from "zambo-prompt-shield";
 
 const result = scanPromptSync(userInput);
 // { recommendation, injection_risk, jailbreak_detected, flagged_patterns, pattern_count }
