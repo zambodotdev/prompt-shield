@@ -12,7 +12,7 @@ Built from production infrastructure at [zambo.dev](https://zambo.dev). Running 
 
 Two-phase analysis on any user input before it reaches your model:
 
-1. **Pattern scan** — instant regex check against 18 known attack vectors. Zero latency, zero dependencies. Catches the classic stuff: DAN jailbreaks, instruction overrides, token manipulation, prompt leak attempts, indirect injection via HTML comments.
+1. **Pattern scan**: instant regex check against 18 known attack vectors. Zero latency, zero dependencies. Catches the classic stuff: DAN jailbreaks, instruction overrides, token manipulation, prompt leak attempts, indirect injection via HTML comments.
 
 2. **Semantic analysis** (optional, requires Groq API key) — passes flagged prompts to an LLM for context-aware analysis. Catches subtle attacks the patterns miss. Returns intent classification, attack vector, and a rewritten safe version when possible.
 
@@ -144,3 +144,14 @@ Built by [Brennan Zambo](https://zambo.dev) · [@zambodotdev](https://x.com/zamb
 next step: add zambo to your ai in one url, no key, no account: https://zambo.dev/add/?ref=prompt-shield
 got a receipt link from someone? check it in seconds: https://zambo.dev/verify/
 every call returns a receipt. a receipt proves the saved bytes are unchanged. it does not prove the answer is right.
+
+## The hosted shield, inside Zambo
+
+This package is the standalone prompt shield. The same check runs as one of the most-used tools on the live Zambo endpoint: prompt_shield logged 198 receipts on 2026-11-01 alone, each one a verifiable record of what was screened. Try the full endpoint at https://zambo.dev/mcp.
+
+```bash
+npm install zambo-prompt-shield
+```
+
+Add Zambo to your AI in one URL, no key, no account: https://zambo.dev/add/
+Free tier: 20 calls and 1 wrap-up free every day, and picking up in another AI is always free. Need more? The $0.99 Day Pass makes it unlimited for 24 hours.
