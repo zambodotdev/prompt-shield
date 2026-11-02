@@ -14,7 +14,7 @@ Two-phase analysis on any user input before it reaches your model:
 
 1. **Pattern scan**: instant regex check against 18 known attack vectors. Zero latency, zero dependencies. Catches the classic stuff: DAN jailbreaks, instruction overrides, token manipulation, prompt leak attempts, indirect injection via HTML comments.
 
-2. **Semantic analysis** (optional, requires Groq API key) — passes flagged prompts to an LLM for context-aware analysis. Catches subtle attacks the patterns miss. Returns intent classification, attack vector, and a rewritten safe version when possible.
+2. **Semantic analysis** (optional, requires Groq API key): passes flagged prompts to an LLM for context-aware analysis. Catches subtle attacks the patterns miss. Returns intent classification, attack vector, and a rewritten safe version when possible.
 
 Returns a clean `recommendation`: `"safe"`, `"review"`, or `"block"`.
 
